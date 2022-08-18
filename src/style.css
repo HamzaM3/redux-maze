@@ -1,0 +1,17 @@
+body, html {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maze{
+    width: 400px;
+    height: 400px;
+    display: grid;
+}
