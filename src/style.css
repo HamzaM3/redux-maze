@@ -2,16 +2,39 @@ body, html {
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: black;
 }
 
-.maze{
-    width: 400px;
-    height: 400px;
-    display: grid;
+.top {
+    background: linear-gradient(to right, #ffffff07, #ffffff07), url("http://superwalrusland.com/ohr/issue26/pa/brick4_b.jpg");
+    background-size: 26.5px 20px;
+}
+
+.front {
+    background-image: linear-gradient(to right, #00000077, #00000077), url("http://superwalrusland.com/ohr/issue26/pa/brick4_b.jpg") ;
+    background-size: 26.5px 20px;
+}
+
+.horizontal-wall {
+  display: grid;
+  grid-template-rows: 10px 20px;
+  grid-template-columns: 90px;
+}
+
+.vertical-wall {
+  display: grid;
+  grid-template-rows: 90px 20px;
+  grid-template-columns: 10px;
+}
+
+.maze {
+  display: grid;
+  background: #3e301b;
 }
